@@ -1,0 +1,34 @@
+\documentclass{standalone}
+
+% \usepackage[total={2in, 2in},margin=0in]{geometry}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+\usepackage{inconsolata}
+\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+
+\definecolor{border_color}{HTML}{\bordercolor}
+
+\begin{tikzpicture}
+
+  \newdimen\R
+  \R=1in
+
+  \draw[rounded corners=0.3mm,line width=1.3mm,color=border_color]
+    (30:\R)--(90:\R)--(150:\R)--(210:\R)--(270:\R)--(330:\R)--cycle;
+
+  \node[]             at   (90:\graphicvertical in)     {\includegraphics[height=\graphicheight in]{\imgpath}};
+  \node[align=center] at  (90:0.52in) {\Large \ttfamily \bfseries \coursenum};
+  \node[align=center] at (270: \bottomtextheight in) {\large \ttfamily \coursetitletop \\ \large \ttfamily \coursetitlebottom};
+
+\end{tikzpicture}
+
+\end{document}
+
+
