@@ -72,6 +72,11 @@ arg_dict = {
         "course_title_bottom" : "Computation",
         "border_color" : "873E23", 
         },
+    "0202" : {
+        "course_title_top" : "Computer",
+        "course_title_bottom" : "Architecture",
+        "border_color" : "873E23", 
+        },
 }
 
 
