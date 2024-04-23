@@ -79,9 +79,6 @@ arg_dict = {
         },
 }
 
-
-
-
 if __name__ == "__main__":
     
     top_dirs = os.listdir(IMG_PATH)
