@@ -65,7 +65,7 @@ arg_dict = {
     "0312" : {
         "course_title_top" : "Software",
         "course_title_bottom" : "Development",
-        "border_color" : "873E23", 
+        "border_color" : "666666", 
         },
     "0301" : {
         "course_title_top" : "Theory of",
@@ -76,6 +76,11 @@ arg_dict = {
         "course_title_top" : "Computer",
         "course_title_bottom" : "Architecture",
         "border_color" : "873E23", 
+        },
+    "0321" : {
+        "course_title_top" : "Bioinformatics",
+        "course_title_bottom" : "Algorithms",
+        "border_color" : "666666", 
         },
 }
 
@@ -101,7 +106,7 @@ if __name__ == "__main__":
                                 course_title_top = f"{args['course_title_top']}", 
                                 course_title_bottom = f"{args['course_title_bottom']}", 
                                 image_path = image_path, 
-                                border_color = "873E23", 
+                                border_color = args.get("border_color","873E23"), 
                                 background_color= "white", 
                                 graphic_height = args.get("graphic_height", 0.75),
                                 bottom_text_height=args.get("bottom_text_height", 0.5),
