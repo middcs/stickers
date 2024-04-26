@@ -1,0 +1,42 @@
+% common arguments
+\newcommand{\coursenum}[0]{CSCI 0312}%
+\newcommand{\coursetitletop}[0]{Software}%
+\newcommand{\coursetitlebottom}[0]{Development}%
+\newcommand{\bordercolor}[0]{666666}%
+\newcommand{\backgroundcolor}[0]{FFFFFF}%
+
+
+\documentclass{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{inconsolata} % change to control font
+\renewcommand*\familydefault{\ttdefault} 
+\usepackage[T1]{fontenc}
+\usetikzlibrary{backgrounds}
+
+\begin{document}
+
+\definecolor{border_color}{HTML}{\bordercolor}%
+\definecolor{background_color}{HTML}{\backgroundcolor}%
+
+\begin{tikzpicture}
+
+  \newdimen\R
+  \R=1in
+  \fill [opacity=1,background_color]
+  (30:\R)--(90:\R)--(150:\R)--(210:\R)--(270:\R)--(330:\R)--cycle;
+
+  \node[]             at   (0, 0.2)     {\includegraphics[height=0.8 in]{statue.jpeg}};
+  \node[align=center] at  (90:0.55in) {\Large \ttfamily \bfseries \coursenum};
+  \node[align=center] at (270: 0.5 in) {\large \ttfamily \coursetitletop \\ \large \ttfamily \coursetitlebottom};
+  
+  \draw[rounded corners=0.3mm,line width=1.3mm,color=border_color]
+    (30:\R)--(90:\R)--(150:\R)--(210:\R)--(270:\R)--(330:\R)--cycle;
+
+
+  \end{tikzpicture}
+
+\end{document}
+
+
