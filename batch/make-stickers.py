@@ -82,6 +82,11 @@ arg_dict = {
         "course_title_bottom" : "Algorithms",
         "border_color" : "666666", 
         },
+     "0311" : {
+        "course_title_top" : "Artificial",
+        "course_title_bottom" : "Intelligence",
+        "border_color" : "666666", 
+        },
 }
 
 if __name__ == "__main__":
