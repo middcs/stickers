@@ -52,6 +52,11 @@ arg_dict = {
         "course_title_bottom" : "Processing",
         "border_color" : "873E23", 
         },
+    "0435" : {
+	"course_title_top" : "Embedded",
+	"course_title_bottom" : "Systems",
+	"border_color" : "000000",
+	},
     "0302" : {
         "course_title_top" : "Algorithms and",
         "course_title_bottom" : "Complexity",
