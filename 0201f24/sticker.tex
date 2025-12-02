@@ -1,0 +1,45 @@
+% common arguments
+\newcommand{\coursenum}[0]{CSCI 0201}%
+\newcommand{\coursetitletop}[0]{Data}%
+\newcommand{\coursetitlebottom}[0]{Structures}%
+\newcommand{\bordercolor}[0]{579659}%
+\newcommand{\backgroundcolor}[0]{FFFFFF}%
+
+
+\documentclass{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+%\usepackage{courier}
+\usepackage{inconsolata} % change to control font
+\renewcommand*\familydefault{\ttdefault} 
+\usepackage[T1]{fontenc}
+\usetikzlibrary{backgrounds}
+
+\begin{document}
+
+\definecolor{border_color}{HTML}{\bordercolor}%
+\definecolor{background_color}{HTML}{\backgroundcolor}%
+
+\begin{tikzpicture}
+
+  \newdimen\R
+  \R=1in
+  \fill [opacity=1,background_color]
+  (30:\R)--(90:\R)--(150:\R)--(210:\R)--(270:\R)--(330:\R)--cycle;
+
+  \node[]             at   (0.0, 0)     {\includegraphics[height=0.7 in]{spiderman-double.png}};
+  \node[align=center] at  (90:0.52in) {\Large \ttfamily \bfseries \coursenum};
+  \node[align=center] at (270: 0.53 in) {\large \ttfamily \coursetitletop \\ \large \ttfamily \coursetitlebottom};
+
+  \node at(-1.25, 0.25) {{\fontfamily{pcr}\selectfont\bfseries\texttt{prev}}}; 
+  \node at(1.25, 0.4) {\bfseries\texttt{next}}; 
+  \draw[rounded corners=0.3mm,line width=1.3mm,color=border_color]
+    (30:\R)--(90:\R)--(150:\R)--(210:\R)--(270:\R)--(330:\R)--cycle;
+
+
+  \end{tikzpicture}
+
+\end{document}
+
+
