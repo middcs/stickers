@@ -1,9 +1,10 @@
 % common arguments
-\newcommand{\coursenum}[0]{CSCI 0302}%
-\newcommand{\coursetitletop}[0]{Algorithms and}%
-\newcommand{\coursetitlebottom}[0]{Complexity}%
-\newcommand{\bordercolor}[0]{D04848}%
+\newcommand{\coursenum}[0]{CSCI 0467}%
+\newcommand{\coursetitletop}[0]{Generative}%
+\newcommand{\coursetitlebottom}[0]{Art}%
+\newcommand{\bordercolor}[0]{000000}%
 \newcommand{\backgroundcolor}[0]{FFFFFF}%
+
 
 
 \documentclass{standalone}
@@ -23,18 +24,21 @@
 \begin{tikzpicture}
 
   \newdimen\R
-  \R=1in
+  \R=1.125in
   \fill [opacity=1,background_color]
   (30:\R)--(90:\R)--(150:\R)--(210:\R)--(270:\R)--(330:\R)--cycle;
+
+  \node[]             at   (0.0, 0)     {\includegraphics[height=1.7 in]{flower.png}};
  
-  \node[]             at   (0.0, .05)     {\includegraphics[height=0.8 in]{prim_or_kruskal.jpg}};
   \node[align=center] at  (90:0.52in) {\Large \ttfamily \bfseries \coursenum};
   \node[align=center] at (270: 0.57 in) {\large \ttfamily \coursetitletop \\ \large \ttfamily \coursetitlebottom};
   
-  \draw[rounded corners=0.3mm,line width=1.3mm,color=border_color]
+  \draw[rounded corners=0.3mm,line width=3.9mm,color=border_color]
     (30:\R)--(90:\R)--(150:\R)--(210:\R)--(270:\R)--(330:\R)--cycle;
 
 
   \end{tikzpicture}
 
 \end{document}
+
+

@@ -1,8 +1,8 @@
 % common arguments
-\newcommand{\coursenum}[0]{CSCI 0302}%
-\newcommand{\coursetitletop}[0]{Algorithms and}%
-\newcommand{\coursetitlebottom}[0]{Complexity}%
-\newcommand{\bordercolor}[0]{D04848}%
+\newcommand{\coursenum}[0]{CSCI 0312}%
+\newcommand{\coursetitletop}[0]{Software}%
+\newcommand{\coursetitlebottom}[0]{Development}%
+\newcommand{\bordercolor}[0]{666666}%
 \newcommand{\backgroundcolor}[0]{FFFFFF}%
 
 
@@ -26,10 +26,10 @@
   \R=1in
   \fill [opacity=1,background_color]
   (30:\R)--(90:\R)--(150:\R)--(210:\R)--(270:\R)--(330:\R)--cycle;
- 
-  \node[]             at   (0.0, .05)     {\includegraphics[height=0.8 in]{prim_or_kruskal.jpg}};
-  \node[align=center] at  (90:0.52in) {\Large \ttfamily \bfseries \coursenum};
-  \node[align=center] at (270: 0.57 in) {\large \ttfamily \coursetitletop \\ \large \ttfamily \coursetitlebottom};
+
+  \node[]             at   (0, 0.2)     {\includegraphics[height=0.9 in]{bump_the_lamp.png}};
+  \node[align=center] at  (90:0.55in) {\Large \ttfamily \bfseries \coursenum};
+  \node[align=center] at (270: 0.5 in) {\large \ttfamily \coursetitletop \\ \large \ttfamily \coursetitlebottom};
   
   \draw[rounded corners=0.3mm,line width=1.3mm,color=border_color]
     (30:\R)--(90:\R)--(150:\R)--(210:\R)--(270:\R)--(330:\R)--cycle;
@@ -38,3 +38,5 @@
   \end{tikzpicture}
 
 \end{document}
+
+
