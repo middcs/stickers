@@ -1,0 +1,39 @@
+% common arguments
+\newcommand{\coursenum}[0]{CSCI 1053} % COURSE NUMBER
+\newcommand{\coursetitletop}[0]{Computer} % COURSE TITLE TOP
+\newcommand{\coursetitlebottom}[0]{Vision} % COURSE TITLE BOTTOM
+\newcommand{\bordercolor}[0]{E05C5C} % BORDER COLOR
+\newcommand{\backgroundcolor}[0]{ffffff} % BACKGROUND COLOR
+
+\documentclass{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{inconsolata}
+\renewcommand*\familydefault{\ttdefault} 
+\usepackage[T1]{fontenc}
+\usetikzlibrary{backgrounds}
+
+\begin{document}
+
+\definecolor{border_color}{HTML}{\bordercolor} %MODIFY BORDER COLOR HERE
+\definecolor{background_color}{HTML}{\backgroundcolor}% %MODIFY BACKGROUND COLOR HERE
+
+\begin{tikzpicture}
+
+  \newdimen\R
+  \R=1.05in
+  \fill [opacity=1,background_color]
+  (30:\R)--(90:\R)--(150:\R)--(210:\R)--(270:\R)--(330:\R)--cycle;
+
+  \node[]             at   (0.0, 0)     {\includegraphics[height=0.75in]{cv_img.pdf}}; % INSERT IMAGE FILE NAME HERE
+  \node[align=center] at  (90:0.52in) {\Large \ttfamily \bfseries \coursenum};
+  \node[align=center] at (270: 0.6 in) {\large \ttfamily \coursetitletop \\ \large \ttfamily \coursetitlebottom};
+  
+  \draw[rounded corners=0.3mm,line width=2.6mm,color=border_color]
+    (30:\R)--(90:\R)--(150:\R)--(210:\R)--(270:\R)--(330:\R)--cycle;
+
+
+  \end{tikzpicture}
+
+\end{document}
